@@ -1,0 +1,864 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEA9DA0F296D7B3F00835895 /* LifehacksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DA0E296D7B3F00835895 /* LifehacksApp.swift */; };
+		CEA9DA11296D7B3F00835895 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DA10296D7B3F00835895 /* ContentView.swift */; };
+		CEA9DA13296D7B4000835895 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA9DA12296D7B4000835895 /* Assets.xcassets */; };
+		CEA9DA16296D7B4000835895 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA9DA15296D7B4000835895 /* Preview Assets.xcassets */; };
+		CEA9DA20296D7B4000835895 /* LifehacksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DA1F296D7B4000835895 /* LifehacksTests.swift */; };
+		CEA9DA2A296D7B4000835895 /* LifehacksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DA29296D7B4000835895 /* LifehacksUITests.swift */; };
+		CEA9DA2C296D7B4000835895 /* LifehacksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DA2B296D7B4000835895 /* LifehacksUITestsLaunchTests.swift */; };
+		CEA9DA39296D7BC000835895 /* NavigationMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DA38296D7BC000835895 /* NavigationMap.swift */; };
+		CEA9DB10296D7CD000835895 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DB0F296D7CD000835895 /* LoginView.swift */; };
+		CEA9DB15296D7D2A00835895 /* TopQuestionsView.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DB12296D7D2A00835895 /* TopQuestionsView.ViewModel.swift */; };
+		CEA9DB16296D7D2A00835895 /* QuestionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DB13296D7D2A00835895 /* QuestionRow.swift */; };
+		CEA9DB17296D7D2A00835895 /* TopQuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DB14296D7D2A00835895 /* TopQuestionsView.swift */; };
+		CEA9DB1E296D7DD500835895 /* QuestionView.Voting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DB19296D7DD500835895 /* QuestionView.Voting.swift */; };
+		CEA9DB1F296D7DD500835895 /* QuestionView.AnswerDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DB1A296D7DD500835895 /* QuestionView.AnswerDetails.swift */; };
+		CEA9DB20296D7DD500835895 /* QuestionView.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DB1B296D7DD500835895 /* QuestionView.ViewModel.swift */; };
+		CEA9DB21296D7DD500835895 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DB1C296D7DD500835895 /* QuestionView.swift */; };
+		CEA9DB22296D7DD500835895 /* QuestionView.QuestionDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DB1D296D7DD500835895 /* QuestionView.QuestionDetails.swift */; };
+		CEA9DB27296D7E1900835895 /* ProfileView.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DB24296D7E1900835895 /* ProfileView.ViewModel.swift */; };
+		CEA9DB28296D7E1900835895 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DB25296D7E1900835895 /* EditProfileView.swift */; };
+		CEA9DB29296D7E1900835895 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DB26296D7E1900835895 /* ProfileView.swift */; };
+		CEA9DB2B296D7E4500835895 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DB2A296D7E4500835895 /* SettingsView.swift */; };
+		CEA9DB2F296D7E6800835895 /* TopTagsView.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DB2D296D7E6800835895 /* TopTagsView.ViewModel.swift */; };
+		CEA9DB30296D7E6800835895 /* TopTagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DB2E296D7E6800835895 /* TopTagsView.swift */; };
+		CEA9DB34296D7E9200835895 /* TopUsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DB32296D7E9200835895 /* TopUsersView.swift */; };
+		CEA9DB35296D7E9200835895 /* TopUsersView.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DB33296D7E9200835895 /* TopUsersView.ViewModel.swift */; };
+		CEA9DB3F296D7ED100835895 /* AdaptiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DB37296D7ED100835895 /* AdaptiveView.swift */; };
+		CEA9DB40296D7ED100835895 /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DB38296D7ED100835895 /* LoadingIndicator.swift */; };
+		CEA9DB41296D7ED100835895 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DB39296D7ED100835895 /* ImagePicker.swift */; };
+		CEA9DB42296D7ED100835895 /* TagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DB3A296D7ED100835895 /* TagsView.swift */; };
+		CEA9DB43296D7ED100835895 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DB3B296D7ED100835895 /* ActivityIndicator.swift */; };
+		CEA9DB44296D7ED100835895 /* MultilineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DB3C296D7ED100835895 /* MultilineTextField.swift */; };
+		CEA9DB45296D7ED100835895 /* RoundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DB3D296D7ED100835895 /* RoundImage.swift */; };
+		CEA9DB46296D7ED100835895 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DB3E296D7ED100835895 /* PageControl.swift */; };
+		CEA9DB4D296D83C000835895 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DB48296D83C000835895 /* String.swift */; };
+		CEA9DB4E296D83C000835895 /* Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DB49296D83C000835895 /* Formatting.swift */; };
+		CEA9DB4F296D83C000835895 /* Motif.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DB4A296D83C000835895 /* Motif.swift */; };
+		CEA9DB50296D83C000835895 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DB4B296D83C000835895 /* Styles.swift */; };
+		CEA9DB51296D83C000835895 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DB4C296D83C000835895 /* URL.swift */; };
+		CEA9DB57296D840600835895 /* StateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DB53296D840600835895 /* StateController.swift */; };
+		CEA9DB58296D840600835895 /* StorageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DB54296D840600835895 /* StorageController.swift */; };
+		CEA9DB59296D840600835895 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DB55296D840600835895 /* SettingsController.swift */; };
+		CEA9DB5E296D844D00835895 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DB5C296D844C00835895 /* NetworkRequest.swift */; };
+		CEA9DB5F296D844D00835895 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DB5D296D844D00835895 /* Resources.swift */; };
+		CEA9DB64296D849A00835895 /* Votable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DB61296D849A00835895 /* Votable.swift */; };
+		CEA9DB65296D849A00835895 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DB62296D849A00835895 /* Theme.swift */; };
+		CEA9DB66296D849A00835895 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DB63296D849A00835895 /* Model.swift */; };
+		CEA9DB69296D851200835895 /* Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DB67296D851200835895 /* Previews.swift */; };
+		CEA9DB6A296D851200835895 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9DB68296D851200835895 /* TestData.swift */; };
+		CEA9DB6C296D854E00835895 /* Questions.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEA9DB6B296D854E00835895 /* Questions.plist */; };
+		CEA9DB6F296D855A00835895 /* Other.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA9DB6D296D855A00835895 /* Other.png */; };
+		CEA9DB70296D855A00835895 /* Avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA9DB6E296D855A00835895 /* Avatar.png */; };
+		CEA9DB74296D856800835895 /* Tags.json in Resources */ = {isa = PBXBuildFile; fileRef = CEA9DB71296D856800835895 /* Tags.json */; };
+		CEA9DB75296D856800835895 /* Users.json in Resources */ = {isa = PBXBuildFile; fileRef = CEA9DB72296D856800835895 /* Users.json */; };
+		CEA9DB76296D856800835895 /* Questions.json in Resources */ = {isa = PBXBuildFile; fileRef = CEA9DB73296D856800835895 /* Questions.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEA9DA1C296D7B4000835895 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEA9DA03296D7B3F00835895 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEA9DA0A296D7B3F00835895;
+			remoteInfo = Lifehacks;
+		};
+		CEA9DA26296D7B4000835895 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEA9DA03296D7B3F00835895 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEA9DA0A296D7B3F00835895;
+			remoteInfo = Lifehacks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CEA9DA0B296D7B3F00835895 /* Lifehacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lifehacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA9DA0E296D7B3F00835895 /* LifehacksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifehacksApp.swift; sourceTree = "<group>"; };
+		CEA9DA10296D7B3F00835895 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CEA9DA12296D7B4000835895 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEA9DA15296D7B4000835895 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CEA9DA1B296D7B4000835895 /* LifehacksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifehacksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA9DA1F296D7B4000835895 /* LifehacksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifehacksTests.swift; sourceTree = "<group>"; };
+		CEA9DA25296D7B4000835895 /* LifehacksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifehacksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA9DA29296D7B4000835895 /* LifehacksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifehacksUITests.swift; sourceTree = "<group>"; };
+		CEA9DA2B296D7B4000835895 /* LifehacksUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifehacksUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CEA9DA38296D7BC000835895 /* NavigationMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationMap.swift; sourceTree = "<group>"; };
+		CEA9DB0F296D7CD000835895 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		CEA9DB12296D7D2A00835895 /* TopQuestionsView.ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopQuestionsView.ViewModel.swift; sourceTree = "<group>"; };
+		CEA9DB13296D7D2A00835895 /* QuestionRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionRow.swift; sourceTree = "<group>"; };
+		CEA9DB14296D7D2A00835895 /* TopQuestionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopQuestionsView.swift; sourceTree = "<group>"; };
+		CEA9DB19296D7DD500835895 /* QuestionView.Voting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionView.Voting.swift; sourceTree = "<group>"; };
+		CEA9DB1A296D7DD500835895 /* QuestionView.AnswerDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionView.AnswerDetails.swift; sourceTree = "<group>"; };
+		CEA9DB1B296D7DD500835895 /* QuestionView.ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionView.ViewModel.swift; sourceTree = "<group>"; };
+		CEA9DB1C296D7DD500835895 /* QuestionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		CEA9DB1D296D7DD500835895 /* QuestionView.QuestionDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionView.QuestionDetails.swift; sourceTree = "<group>"; };
+		CEA9DB24296D7E1900835895 /* ProfileView.ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.ViewModel.swift; sourceTree = "<group>"; };
+		CEA9DB25296D7E1900835895 /* EditProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		CEA9DB26296D7E1900835895 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		CEA9DB2A296D7E4500835895 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CEA9DB2D296D7E6800835895 /* TopTagsView.ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopTagsView.ViewModel.swift; sourceTree = "<group>"; };
+		CEA9DB2E296D7E6800835895 /* TopTagsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopTagsView.swift; sourceTree = "<group>"; };
+		CEA9DB32296D7E9200835895 /* TopUsersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopUsersView.swift; sourceTree = "<group>"; };
+		CEA9DB33296D7E9200835895 /* TopUsersView.ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopUsersView.ViewModel.swift; sourceTree = "<group>"; };
+		CEA9DB37296D7ED100835895 /* AdaptiveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdaptiveView.swift; sourceTree = "<group>"; };
+		CEA9DB38296D7ED100835895 /* LoadingIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
+		CEA9DB39296D7ED100835895 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		CEA9DB3A296D7ED100835895 /* TagsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagsView.swift; sourceTree = "<group>"; };
+		CEA9DB3B296D7ED100835895 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		CEA9DB3C296D7ED100835895 /* MultilineTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultilineTextField.swift; sourceTree = "<group>"; };
+		CEA9DB3D296D7ED100835895 /* RoundImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundImage.swift; sourceTree = "<group>"; };
+		CEA9DB3E296D7ED100835895 /* PageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
+		CEA9DB48296D83C000835895 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		CEA9DB49296D83C000835895 /* Formatting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formatting.swift; sourceTree = "<group>"; };
+		CEA9DB4A296D83C000835895 /* Motif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Motif.swift; sourceTree = "<group>"; };
+		CEA9DB4B296D83C000835895 /* Styles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		CEA9DB4C296D83C000835895 /* URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+		CEA9DB53296D840600835895 /* StateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateController.swift; sourceTree = "<group>"; };
+		CEA9DB54296D840600835895 /* StorageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageController.swift; sourceTree = "<group>"; };
+		CEA9DB55296D840600835895 /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		CEA9DB5C296D844C00835895 /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		CEA9DB5D296D844D00835895 /* Resources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		CEA9DB61296D849A00835895 /* Votable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Votable.swift; sourceTree = "<group>"; };
+		CEA9DB62296D849A00835895 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		CEA9DB63296D849A00835895 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		CEA9DB67296D851200835895 /* Previews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Previews.swift; sourceTree = "<group>"; };
+		CEA9DB68296D851200835895 /* TestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
+		CEA9DB6B296D854E00835895 /* Questions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Questions.plist; sourceTree = "<group>"; };
+		CEA9DB6D296D855A00835895 /* Other.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Other.png; sourceTree = "<group>"; };
+		CEA9DB6E296D855A00835895 /* Avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Avatar.png; sourceTree = "<group>"; };
+		CEA9DB71296D856800835895 /* Tags.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Tags.json; sourceTree = "<group>"; };
+		CEA9DB72296D856800835895 /* Users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Users.json; sourceTree = "<group>"; };
+		CEA9DB73296D856800835895 /* Questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Questions.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEA9DA08296D7B3F00835895 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA9DA18296D7B4000835895 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA9DA22296D7B4000835895 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEA9DA02296D7B3F00835895 = {
+			isa = PBXGroup;
+			children = (
+				CEA9DA0D296D7B3F00835895 /* Lifehacks */,
+				CEA9DA1E296D7B4000835895 /* LifehacksTests */,
+				CEA9DA28296D7B4000835895 /* LifehacksUITests */,
+				CEA9DA0C296D7B3F00835895 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEA9DA0C296D7B3F00835895 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEA9DA0B296D7B3F00835895 /* Lifehacks.app */,
+				CEA9DA1B296D7B4000835895 /* LifehacksTests.xctest */,
+				CEA9DA25296D7B4000835895 /* LifehacksUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEA9DA0D296D7B3F00835895 /* Lifehacks */ = {
+			isa = PBXGroup;
+			children = (
+				CEA9DA0E296D7B3F00835895 /* LifehacksApp.swift */,
+				CEA9DA10296D7B3F00835895 /* ContentView.swift */,
+				CEA9DA38296D7BC000835895 /* NavigationMap.swift */,
+				CEA9DB0E296D7CAE00835895 /* Screens */,
+				CEA9DB36296D7EC000835895 /* Reusable Views */,
+				CEA9DB47296D83A900835895 /* Extensions */,
+				CEA9DB52296D83F500835895 /* Controllers */,
+				CEA9DB5B296D843C00835895 /* Networking */,
+				CEA9DB60296D848600835895 /* Model */,
+				CEA9DA12296D7B4000835895 /* Assets.xcassets */,
+				CEA9DA14296D7B4000835895 /* Preview Content */,
+			);
+			path = Lifehacks;
+			sourceTree = "<group>";
+		};
+		CEA9DA14296D7B4000835895 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CEA9DB67296D851200835895 /* Previews.swift */,
+				CEA9DB68296D851200835895 /* TestData.swift */,
+				CEA9DB73296D856800835895 /* Questions.json */,
+				CEA9DB71296D856800835895 /* Tags.json */,
+				CEA9DB72296D856800835895 /* Users.json */,
+				CEA9DB6B296D854E00835895 /* Questions.plist */,
+				CEA9DA15296D7B4000835895 /* Preview Assets.xcassets */,
+				CEA9DB6E296D855A00835895 /* Avatar.png */,
+				CEA9DB6D296D855A00835895 /* Other.png */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CEA9DA1E296D7B4000835895 /* LifehacksTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEA9DA1F296D7B4000835895 /* LifehacksTests.swift */,
+			);
+			path = LifehacksTests;
+			sourceTree = "<group>";
+		};
+		CEA9DA28296D7B4000835895 /* LifehacksUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CEA9DA29296D7B4000835895 /* LifehacksUITests.swift */,
+				CEA9DA2B296D7B4000835895 /* LifehacksUITestsLaunchTests.swift */,
+			);
+			path = LifehacksUITests;
+			sourceTree = "<group>";
+		};
+		CEA9DB0E296D7CAE00835895 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				CEA9DB0F296D7CD000835895 /* LoginView.swift */,
+				CEA9DB2A296D7E4500835895 /* SettingsView.swift */,
+				CEA9DB11296D7D1800835895 /* Top Questions */,
+				CEA9DB18296D7DB200835895 /* Question */,
+				CEA9DB23296D7E0500835895 /* Profile */,
+				CEA9DB2C296D7E5900835895 /* Tags */,
+				CEA9DB31296D7E8300835895 /* Users */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		CEA9DB11296D7D1800835895 /* Top Questions */ = {
+			isa = PBXGroup;
+			children = (
+				CEA9DB13296D7D2A00835895 /* QuestionRow.swift */,
+				CEA9DB14296D7D2A00835895 /* TopQuestionsView.swift */,
+				CEA9DB12296D7D2A00835895 /* TopQuestionsView.ViewModel.swift */,
+			);
+			path = "Top Questions";
+			sourceTree = "<group>";
+		};
+		CEA9DB18296D7DB200835895 /* Question */ = {
+			isa = PBXGroup;
+			children = (
+				CEA9DB1A296D7DD500835895 /* QuestionView.AnswerDetails.swift */,
+				CEA9DB1D296D7DD500835895 /* QuestionView.QuestionDetails.swift */,
+				CEA9DB1C296D7DD500835895 /* QuestionView.swift */,
+				CEA9DB1B296D7DD500835895 /* QuestionView.ViewModel.swift */,
+				CEA9DB19296D7DD500835895 /* QuestionView.Voting.swift */,
+			);
+			path = Question;
+			sourceTree = "<group>";
+		};
+		CEA9DB23296D7E0500835895 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				CEA9DB25296D7E1900835895 /* EditProfileView.swift */,
+				CEA9DB26296D7E1900835895 /* ProfileView.swift */,
+				CEA9DB24296D7E1900835895 /* ProfileView.ViewModel.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		CEA9DB2C296D7E5900835895 /* Tags */ = {
+			isa = PBXGroup;
+			children = (
+				CEA9DB2E296D7E6800835895 /* TopTagsView.swift */,
+				CEA9DB2D296D7E6800835895 /* TopTagsView.ViewModel.swift */,
+			);
+			path = Tags;
+			sourceTree = "<group>";
+		};
+		CEA9DB31296D7E8300835895 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				CEA9DB32296D7E9200835895 /* TopUsersView.swift */,
+				CEA9DB33296D7E9200835895 /* TopUsersView.ViewModel.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		CEA9DB36296D7EC000835895 /* Reusable Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEA9DB3B296D7ED100835895 /* ActivityIndicator.swift */,
+				CEA9DB37296D7ED100835895 /* AdaptiveView.swift */,
+				CEA9DB39296D7ED100835895 /* ImagePicker.swift */,
+				CEA9DB38296D7ED100835895 /* LoadingIndicator.swift */,
+				CEA9DB3C296D7ED100835895 /* MultilineTextField.swift */,
+				CEA9DB3E296D7ED100835895 /* PageControl.swift */,
+				CEA9DB3D296D7ED100835895 /* RoundImage.swift */,
+				CEA9DB3A296D7ED100835895 /* TagsView.swift */,
+			);
+			path = "Reusable Views";
+			sourceTree = "<group>";
+		};
+		CEA9DB47296D83A900835895 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CEA9DB49296D83C000835895 /* Formatting.swift */,
+				CEA9DB4A296D83C000835895 /* Motif.swift */,
+				CEA9DB48296D83C000835895 /* String.swift */,
+				CEA9DB4B296D83C000835895 /* Styles.swift */,
+				CEA9DB4C296D83C000835895 /* URL.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CEA9DB52296D83F500835895 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CEA9DB55296D840600835895 /* SettingsController.swift */,
+				CEA9DB53296D840600835895 /* StateController.swift */,
+				CEA9DB54296D840600835895 /* StorageController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CEA9DB5B296D843C00835895 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CEA9DB5C296D844C00835895 /* NetworkRequest.swift */,
+				CEA9DB5D296D844D00835895 /* Resources.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		CEA9DB60296D848600835895 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEA9DB63296D849A00835895 /* Model.swift */,
+				CEA9DB62296D849A00835895 /* Theme.swift */,
+				CEA9DB61296D849A00835895 /* Votable.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEA9DA0A296D7B3F00835895 /* Lifehacks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEA9DA2F296D7B4000835895 /* Build configuration list for PBXNativeTarget "Lifehacks" */;
+			buildPhases = (
+				CEA9DA07296D7B3F00835895 /* Sources */,
+				CEA9DA08296D7B3F00835895 /* Frameworks */,
+				CEA9DA09296D7B3F00835895 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lifehacks;
+			productName = Lifehacks;
+			productReference = CEA9DA0B296D7B3F00835895 /* Lifehacks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEA9DA1A296D7B4000835895 /* LifehacksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEA9DA32296D7B4000835895 /* Build configuration list for PBXNativeTarget "LifehacksTests" */;
+			buildPhases = (
+				CEA9DA17296D7B4000835895 /* Sources */,
+				CEA9DA18296D7B4000835895 /* Frameworks */,
+				CEA9DA19296D7B4000835895 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEA9DA1D296D7B4000835895 /* PBXTargetDependency */,
+			);
+			name = LifehacksTests;
+			productName = LifehacksTests;
+			productReference = CEA9DA1B296D7B4000835895 /* LifehacksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CEA9DA24296D7B4000835895 /* LifehacksUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEA9DA35296D7B4000835895 /* Build configuration list for PBXNativeTarget "LifehacksUITests" */;
+			buildPhases = (
+				CEA9DA21296D7B4000835895 /* Sources */,
+				CEA9DA22296D7B4000835895 /* Frameworks */,
+				CEA9DA23296D7B4000835895 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEA9DA27296D7B4000835895 /* PBXTargetDependency */,
+			);
+			name = LifehacksUITests;
+			productName = LifehacksUITests;
+			productReference = CEA9DA25296D7B4000835895 /* LifehacksUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEA9DA03296D7B3F00835895 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					CEA9DA0A296D7B3F00835895 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					CEA9DA1A296D7B4000835895 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = CEA9DA0A296D7B3F00835895;
+					};
+					CEA9DA24296D7B4000835895 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = CEA9DA0A296D7B3F00835895;
+					};
+				};
+			};
+			buildConfigurationList = CEA9DA06296D7B3F00835895 /* Build configuration list for PBXProject "Lifehacks" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEA9DA02296D7B3F00835895;
+			productRefGroup = CEA9DA0C296D7B3F00835895 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEA9DA0A296D7B3F00835895 /* Lifehacks */,
+				CEA9DA1A296D7B4000835895 /* LifehacksTests */,
+				CEA9DA24296D7B4000835895 /* LifehacksUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEA9DA09296D7B3F00835895 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA9DB74296D856800835895 /* Tags.json in Resources */,
+				CEA9DB76296D856800835895 /* Questions.json in Resources */,
+				CEA9DB70296D855A00835895 /* Avatar.png in Resources */,
+				CEA9DB6C296D854E00835895 /* Questions.plist in Resources */,
+				CEA9DA16296D7B4000835895 /* Preview Assets.xcassets in Resources */,
+				CEA9DB6F296D855A00835895 /* Other.png in Resources */,
+				CEA9DA13296D7B4000835895 /* Assets.xcassets in Resources */,
+				CEA9DB75296D856800835895 /* Users.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA9DA19296D7B4000835895 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA9DA23296D7B4000835895 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEA9DA07296D7B3F00835895 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA9DB59296D840600835895 /* SettingsController.swift in Sources */,
+				CEA9DB4E296D83C000835895 /* Formatting.swift in Sources */,
+				CEA9DB4D296D83C000835895 /* String.swift in Sources */,
+				CEA9DB40296D7ED100835895 /* LoadingIndicator.swift in Sources */,
+				CEA9DB28296D7E1900835895 /* EditProfileView.swift in Sources */,
+				CEA9DB22296D7DD500835895 /* QuestionView.QuestionDetails.swift in Sources */,
+				CEA9DB27296D7E1900835895 /* ProfileView.ViewModel.swift in Sources */,
+				CEA9DB45296D7ED100835895 /* RoundImage.swift in Sources */,
+				CEA9DB57296D840600835895 /* StateController.swift in Sources */,
+				CEA9DB20296D7DD500835895 /* QuestionView.ViewModel.swift in Sources */,
+				CEA9DB17296D7D2A00835895 /* TopQuestionsView.swift in Sources */,
+				CEA9DB35296D7E9200835895 /* TopUsersView.ViewModel.swift in Sources */,
+				CEA9DB34296D7E9200835895 /* TopUsersView.swift in Sources */,
+				CEA9DB50296D83C000835895 /* Styles.swift in Sources */,
+				CEA9DB16296D7D2A00835895 /* QuestionRow.swift in Sources */,
+				CEA9DA11296D7B3F00835895 /* ContentView.swift in Sources */,
+				CEA9DB51296D83C000835895 /* URL.swift in Sources */,
+				CEA9DB65296D849A00835895 /* Theme.swift in Sources */,
+				CEA9DB30296D7E6800835895 /* TopTagsView.swift in Sources */,
+				CEA9DB6A296D851200835895 /* TestData.swift in Sources */,
+				CEA9DB42296D7ED100835895 /* TagsView.swift in Sources */,
+				CEA9DB29296D7E1900835895 /* ProfileView.swift in Sources */,
+				CEA9DB58296D840600835895 /* StorageController.swift in Sources */,
+				CEA9DB4F296D83C000835895 /* Motif.swift in Sources */,
+				CEA9DA0F296D7B3F00835895 /* LifehacksApp.swift in Sources */,
+				CEA9DB5F296D844D00835895 /* Resources.swift in Sources */,
+				CEA9DB41296D7ED100835895 /* ImagePicker.swift in Sources */,
+				CEA9DB44296D7ED100835895 /* MultilineTextField.swift in Sources */,
+				CEA9DB2B296D7E4500835895 /* SettingsView.swift in Sources */,
+				CEA9DB5E296D844D00835895 /* NetworkRequest.swift in Sources */,
+				CEA9DB43296D7ED100835895 /* ActivityIndicator.swift in Sources */,
+				CEA9DB66296D849A00835895 /* Model.swift in Sources */,
+				CEA9DB1E296D7DD500835895 /* QuestionView.Voting.swift in Sources */,
+				CEA9DB3F296D7ED100835895 /* AdaptiveView.swift in Sources */,
+				CEA9DB15296D7D2A00835895 /* TopQuestionsView.ViewModel.swift in Sources */,
+				CEA9DB69296D851200835895 /* Previews.swift in Sources */,
+				CEA9DB46296D7ED100835895 /* PageControl.swift in Sources */,
+				CEA9DB21296D7DD500835895 /* QuestionView.swift in Sources */,
+				CEA9DB1F296D7DD500835895 /* QuestionView.AnswerDetails.swift in Sources */,
+				CEA9DB10296D7CD000835895 /* LoginView.swift in Sources */,
+				CEA9DA39296D7BC000835895 /* NavigationMap.swift in Sources */,
+				CEA9DB64296D849A00835895 /* Votable.swift in Sources */,
+				CEA9DB2F296D7E6800835895 /* TopTagsView.ViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA9DA17296D7B4000835895 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA9DA20296D7B4000835895 /* LifehacksTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA9DA21296D7B4000835895 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA9DA2A296D7B4000835895 /* LifehacksUITests.swift in Sources */,
+				CEA9DA2C296D7B4000835895 /* LifehacksUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEA9DA1D296D7B4000835895 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEA9DA0A296D7B3F00835895 /* Lifehacks */;
+			targetProxy = CEA9DA1C296D7B4000835895 /* PBXContainerItemProxy */;
+		};
+		CEA9DA27296D7B4000835895 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEA9DA0A296D7B3F00835895 /* Lifehacks */;
+			targetProxy = CEA9DA26296D7B4000835895 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CEA9DA2D296D7B4000835895 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEA9DA2E296D7B4000835895 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEA9DA30296D7B4000835895 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Lifehacks/Preview Content\"";
+				DEVELOPMENT_TEAM = M2ZG9V8CCT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = combine.particlefun.Lifehacks.;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEA9DA31296D7B4000835895 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Lifehacks/Preview Content\"";
+				DEVELOPMENT_TEAM = M2ZG9V8CCT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = combine.particlefun.Lifehacks.;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CEA9DA33296D7B4000835895 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M2ZG9V8CCT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = combine.particlefun.LifehacksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lifehacks.app/Lifehacks";
+			};
+			name = Debug;
+		};
+		CEA9DA34296D7B4000835895 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M2ZG9V8CCT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = combine.particlefun.LifehacksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lifehacks.app/Lifehacks";
+			};
+			name = Release;
+		};
+		CEA9DA36296D7B4000835895 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M2ZG9V8CCT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = combine.particlefun.LifehacksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Lifehacks;
+			};
+			name = Debug;
+		};
+		CEA9DA37296D7B4000835895 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M2ZG9V8CCT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = combine.particlefun.LifehacksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Lifehacks;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEA9DA06296D7B3F00835895 /* Build configuration list for PBXProject "Lifehacks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA9DA2D296D7B4000835895 /* Debug */,
+				CEA9DA2E296D7B4000835895 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEA9DA2F296D7B4000835895 /* Build configuration list for PBXNativeTarget "Lifehacks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA9DA30296D7B4000835895 /* Debug */,
+				CEA9DA31296D7B4000835895 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEA9DA32296D7B4000835895 /* Build configuration list for PBXNativeTarget "LifehacksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA9DA33296D7B4000835895 /* Debug */,
+				CEA9DA34296D7B4000835895 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEA9DA35296D7B4000835895 /* Build configuration list for PBXNativeTarget "LifehacksUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA9DA36296D7B4000835895 /* Debug */,
+				CEA9DA37296D7B4000835895 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEA9DA03296D7B3F00835895 /* Project object */;
+}

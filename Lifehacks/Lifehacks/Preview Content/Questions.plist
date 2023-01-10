@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>id</key>
+		<integer>9531</integer>
+		<key>viewCount</key>
+		<real>31145</real>
+		<key>answerCount</key>
+		<integer>13</integer>
+		<key>title</key>
+		<string>How can I keep my cat off my keyboard?</string>
+		<key>body</key>
+		<string>This is a common scenario when typing:
+
+
+When the family assembled for Sunday dinner,
+With their minds made up that they wouldn&apos;t get thinner
+On Argentine joint, potato^DR&amp;FTGYB`kuhadrggoy867rt98wouth4bfgdhjlkhdsfghhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhf
+
+
+This happens because my cat likes to sit on my keyboard. Is there any way to prevent this from happening? I enjoy my cat&apos;s company while working, so would rather not shut him out.</string>
+		<key>isAnswered</key>
+		<true/>
+		<key>creationDate</key>
+		<date>2015-10-06T13:34:33Z</date>
+		<key>tags</key>
+		<array>
+			<string>pets</string>
+			<string>technology</string>
+		</array>
+		<key>owner</key>
+		<dict>
+			<key>id</key>
+			<integer>160</integer>
+			<key>reputation</key>
+			<real>7150</real>
+			<key>name</key>
+			<string>fredley</string>
+			<key>aboutMe</key>
+			<string>Incomplete project factory.</string>
+		</dict>
+		<key>comments</key>
+		<array>
+			<dict>
+				<key>id</key>
+				<integer>13504</integer>
+				<key>body</key>
+				<string>What were you doing on the computer when the cat sits on your keyboard? ;-)</string>
+				<key>owner</key>
+				<dict>
+					<key>id</key>
+					<integer>160</integer>
+					<key>reputation</key>
+					<integer>9303</integer>
+					<key>name</key>
+					<string>Spikatrix</string>
+					<key>aboutMe</key>
+					<string>Just a guy who loves programming. I love to build Awesome Programs and Games.
+
+I&apos;m good in C since I started coding with it and have used this language the most. I&apos;ve fiddled around with some Java and swing, JavaScript, HTML5, CSS3, Python3 and several other stuff. Still exploring new technologies.
+
+I&apos;ve developed my own Android app from scratch.</string>
+				</dict>
+			</dict>
+		</array>
+		<key>answers</key>
+		<array>
+			<dict>
+				<key>id</key>
+				<real>9533</real>
+				<key>body</key>
+				<string>Place a box near your keyboard that is the right size for the cat to sit in. If possible, place it on something warm.
+
+Cats like two things: warmth and security. It likes being on your keyboard because it&apos;s warm. Provided a warm and secure place to sit and it&apos;ll prefer that.</string>
+				<key>creationDate</key>
+				<date>2015-10-06T14:09:44Z</date>
+				<key>isAccepted</key>
+				<true/>
+				<key>owner</key>
+				<dict>
+					<key>id</key>
+					<integer>160</integer>
+					<key>reputation</key>
+					<real>7150</real>
+					<key>name</key>
+					<string>fredley</string>
+					<key>aboutMe</key>
+					<string>Incomplete project factory.</string>
+				</dict>
+				<key>score</key>
+				<integer>239</integer>
+				<key>vote</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+		<key>score</key>
+		<integer>204</integer>
+		<key>vote</key>
+		<integer>0</integer>
+	</dict>
+</array>
+</plist>
